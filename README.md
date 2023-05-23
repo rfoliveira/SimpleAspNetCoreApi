@@ -9,3 +9,7 @@ git push heroku main
 
 ## Para visualizar o buildpack usado
 no diretório do repositório -> heroku buildpacks
+
+heroku create station-agent-api --buildpack https://github.com/jincod/dotnetcore-buildpack.git
+heroku git:remote -a station-agent-api
+git push heroku main
